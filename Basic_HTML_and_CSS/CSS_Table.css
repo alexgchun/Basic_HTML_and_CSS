@@ -1,0 +1,25 @@
+table {
+	border: 1px solid blue;
+}
+td:hover {
+background-color: yellow;
+color: black;
+
+}
+
+tr, th {
+background-color: black;
+color: yellow;
+}
+
+tr, td {
+background-color: dark-green;
+color: white;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+	font-family: 'Lato', sans-serif;
+}
