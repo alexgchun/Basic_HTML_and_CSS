@@ -2,6 +2,7 @@
 
 <html>
 	<link rel="stylesheet" href="css/one_page_website.css">
+	<script src="JS/one_page_website.js" defer></script>
 <nav>
 				<ul>
 					<a href="#pictures" id="link"><li>Pictures</li></a>
@@ -15,9 +16,65 @@
 </head>
 
 
+
+
+
 <h1 id="pictures">Some Images!</h1>
-<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.bLbL66VhR0fTZNau-JADIgHaE8%26pid%3DApi&f=1" alt="beagle pup">
-<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Bh2X7L39h54TDlkjaHR89wHaEo%26pid%3DApi&f=1" alt="beagle pup">
+
+<div class="row">
+	<div class="column c1">
+	  <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.bLbL66VhR0fTZNau-JADIgHaE8%26pid%3DApi&f=1" onclick="openModal();currentSlide(1)" class="hover-shadow">
+	</div>
+	<div class="column c2">
+	  <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Bh2X7L39h54TDlkjaHR89wHaEo%26pid%3DApi&f=1" onclick="openModal();currentSlide(2)" class="hover-shadow">
+	</div>
+</div>
+
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+	<span class="close cursor" onclick="closeModal()">&times;</span>
+	<div class="modal-content">
+  
+	  <div class="mySlides">
+		<div class="numbertext">1 / 4</div>
+		<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.bLbL66VhR0fTZNau-JADIgHaE8%26pid%3DApi&f=1" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">2 / 4</div>
+		<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Bh2X7L39h54TDlkjaHR89wHaEo%26pid%3DApi&f=1" style="width:100%">
+	  </div>
+  
+  
+	  <!-- Next/previous controls -->
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+	  <!-- Caption text -->
+	  <div class="caption-container">
+		<p id="caption"></p>
+	  </div>
+  
+	  <!-- Thumbnail image controls -->
+	  <div class="column">
+		<img class="demo" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.bLbL66VhR0fTZNau-JADIgHaE8%26pid%3DApi&f=1" onclick="currentSlide(1)" alt="Bagel 1">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Bh2X7L39h54TDlkjaHR89wHaEo%26pid%3DApi&f=1" onclick="currentSlide(2)" alt="Beagel Bagel 2">
+	  </div>
+
+	</div>
+  </div>
+
+
+
+
+
+
+
+
 
 <h1>Give us your data!</h1>
 <form id="form">
