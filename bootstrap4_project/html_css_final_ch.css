@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.center {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid lightcoral;
+    border-radius: 2.5%;
+    
+}
+
+img { 
+    filter: grayscale(100%);
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+}
+
+table, th, td {
+    border: 1px double black;
+
+}
+
+table {
+    width: 100%;
+    margin-top: 80px;
+}
+
+td {
+    padding-top: 10px;
+    padding-bottom: 12px;
+}
+
+th {
+    background-color: LightBlue;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color:white;
+ 
+}
+
+.centered {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: lightgoldenrodyellow;
+    position:  fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: darkblue;
+    text-align: center;
+    padding:  14px 16px;
+    text-decoration: none;
+    
+}
+
+.navbar a:hover {
+    background:cornflowerblue;
+    color: black;
+}
+
+body {
+    margin-top: 80px;
+}
+
+.row {
+    display: flex;
+    min-height: 500px;
+    margin-top: 80px;
+}
+
+.column {
+    flex: 50%;
+}
+
+.red {
+    background-color: lightpink;
+    color: bisque;
+}
+
+.blue {
+    background-color: lightskyblue;
+    color: yellow;
+}
+
+.click:hover {
+    background-color: darkseagreen;
+}
+
+.clicker {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.overlay {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left:0;
+    right:0;
+    height: 100%;
+    width: 50%;
+    opacity: 0;
+    transition: 1s ease-in;
+    background-color: darkseagreen;
+    margin: 0 auto;
+    border-radius: 2.5%;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.video {
+    display: block;
+    margin: 0 auto;
+    
+    width: 800px;
+    height: 600px;
+}
